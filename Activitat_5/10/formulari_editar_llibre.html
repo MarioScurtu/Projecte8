@@ -1,0 +1,11 @@
+<h2>Editar llibre</h2>
+
+<?php if (!empty($error)) echo "<p style='color:red;'>$error</p>"; ?>
+
+<form method="POST" action="">
+    <label>Títol: <input type="text" name="titol" value="<?php echo htmlspecialchars($titol ?? ''); ?>" required></label><br><br>
+    <label>Autor: <input type="text" name="autor" value="<?php echo htmlspecialchars($autor ?? ''); ?>" required></label><br><br>
+    <label>Any: <input type="number" name="any" value="<?php echo htmlspecialchars($any ?? ''); ?>" required></label><br><br>
+    <input type="submit" value="Actualitzar llibre">
+</form>
+
